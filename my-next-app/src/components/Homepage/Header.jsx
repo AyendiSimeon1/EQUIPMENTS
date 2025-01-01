@@ -14,7 +14,7 @@ export function Header() {
             Complete Profile
           </Link>
           <button className="rounded-full bg-white p-2">
-            <UserIcon className="h-6 w-6" />
+            {/* <UserIcon className="h-6 w-6" /> */}
           </button>
         </div>
       </div>
