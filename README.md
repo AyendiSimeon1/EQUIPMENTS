@@ -1,6 +1,6 @@
-# Backend Technical Assesment
+# Technical Assesment Task
 
-# Equipment Management Backend
+## Equipment Management  Backend API 
 
 ---
 
@@ -74,58 +74,50 @@ Ensure you have the following tools installed:
 
 ---
 
-### **Endpoint Details**
+## Figma Screen Implementation (Client)
 
-1. **POST `/create-equipment`**
-   - **Description**: Adds a new equipment entry to the database.
-   - **Response**:
-     - `201 Created`: Returns the created equipment record.
-     - `400 Bad Request`: Error if validation fails.
+### 1. Clone the Repository  
+Run the following command to clone the repository:  
+```bash  
+git clone <repository-url>  
+```  
+Replace `<repository-url>` with the HTTPS or SSH URL of the repository.  
 
-2. **GET `/equipments`**
-   - **Description**: Retrieves all equipment records.
-   - **Response**:
-     - `200 OK`: Returns an array of equipment records.
-     - `500 Internal Server Error`: Error fetching data.
+### 2. Navigate to the Project Directory  
+```bash  
+cd <project-directory-name>  
+```  
+Replace `<project-directory-name>` with the name of the cloned project folder.  
+```bash  
+cd <my-next-app>  
+```  
 
-3. **GET `/equipment/:id`**
-   - **Description**: Fetches a specific equipment record by its ID.
-   - **Response**:
-     - `200 OK`: Returns the equipment record.
-     - `404 Not Found`: Error if the equipment doesn't exist.
+### 3. Install Dependencies  
+Install the required packages using one of the following commands:  
 
-4. **PUT `/equipment/:id`**
-   - **Description**: Updates specific fields of an equipment record.
-   - **Response**:
-     - `200 OK`: Returns the updated equipment record.
-     - `400 Bad Request`: Error for invalid updates.
-     - `404 Not Found`: Error if the equipment doesn't exist.
+Using npm:  
+```bash  
+npm install  
+```  
+Using yarn:  
+```bash  
+yarn install  
+```  
 
-5. **DELETE `/equipment/:id`**
-   - **Description**: Deletes an equipment record.
-   - **Response**:
-     - `200 OK`: Returns the deleted equipment record.
-     - `404 Not Found`: Error if the equipment doesn't exist.
+### 4. Start the Development Server  
+To start the development server, run:  
 
----
+Using npm:  
+```bash  
+npm run dev  
+```  
+Using yarn:  
+```bash  
+yarn dev  
+```  
 
-## **Testing the API**
-
-1. **Using Postman**:
-   - Import the provided [Postman Collection](#) (replace `#` with a link to the collection file).
-   - Update the base URL and test all endpoints.
-
-2. **Sample cURL Commands**:
-   ```bash
-   # Create Equipment
-   curl -X POST http://localhost:4000/create-equipment \
-   -H "Content-Type: application/json" \
-   -d '{"name": "Crane", "type": "Heavy", "status": "Available", "leasePrice": 1500}'
-
-   # Get All Equipments
-   curl -X GET http://localhost:5000/equipments
-   ```
-
----
-
+### 5. Access the Application  
+Once the server is running, open your browser and navigate to:  
+```
+http://localhost:3000  
 
